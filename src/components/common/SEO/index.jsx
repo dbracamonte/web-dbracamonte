@@ -41,7 +41,6 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
 		},
 		"sameAs": [
 			"${socialLinks.twitter}",
-			"${socialLinks.google}",
 			"${socialLinks.youtube}",
 			"${socialLinks.linkedin}",
 			"${socialLinks.instagram}",
@@ -68,7 +67,6 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image:src" content={Thumbnail} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
-      <link rel="publisher" href={socialLinks.google} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
