@@ -6237,9 +6237,9 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-"favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
+"favicons-webpack-plugin@https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
-  resolved "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  resolved "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
@@ -7022,7 +7022,7 @@ gatsby-source-filesystem@^2.1.35:
     valid-url "^1.0.9"
     xstate "^4.13.0"
 
-gatsby-source-graphql@^2.1.21:
+gatsby-source-graphql@^2.7.6:
   version "2.7.6"
   resolved "https://registry.yarnpkg.com/gatsby-source-graphql/-/gatsby-source-graphql-2.7.6.tgz#e86cc28bae2162b14f325909c7249fa9f9698d70"
   integrity sha512-GHzFVK1BkVajSME/Q4Kbmy1waHCuwMUBZ12juU0S8s7SNQrBaY9e9kXzBft2Eak89Y4JrfKoJfnTp5I6r1QDyw==
@@ -7072,7 +7072,7 @@ gatsby-transformer-sharp@^2.2.7:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby@^2.17.7:
+gatsby@^2.24.91:
   version "2.24.91"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.91.tgz#5b363f5d20103cbb61b01020d70debd207eec844"
   integrity sha512-EZ2sAGHkrkCHqPFrHS0hsquUOn/YYMU3+b18ZJWCd+YKH692a68sulIQJKs1cuXn9Tiz4ObiJGf02//r+yJYzw==
