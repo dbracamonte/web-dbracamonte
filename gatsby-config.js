@@ -72,5 +72,35 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        languages: [`es`, `en`],
+        defaultLanguage: `es`,
+        path: `${__dirname}/locales`,
+        siteUrl: 'http://localhost:8000',
+        i18nextOptions: {
+          debug: true,
+          lowerCaseLng: true,
+          saveMissing: false,
+          interpolation: {
+            escapeValue: false,
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
+        // pages: [
+        //   {
+        //     matchPath: '/:lang?/blog/:uid',
+        //     getLanguageFromPath: true,
+        //     excludeLanguages: ['es'],
+        //   },
+        //   {
+        //     matchPath: '/preview',
+        //     languages: ['en'],
+        //   },
+        // ],
+      },
+    },
   ],
 };
