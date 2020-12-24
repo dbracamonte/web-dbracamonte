@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'components/common';
+import { Trans } from 'gatsby-plugin-react-i18next';
 import { Wrapper, Flex, Links, Details } from './styles';
 import social from './social.json';
 
@@ -9,11 +10,11 @@ export const Footer = () => (
       <Details>
         <h2>Darwin Bracamonte</h2>
         <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
+          © <Trans>All rights are reserved</Trans> | {new Date().getFullYear()} | by{' '}
+          <a href="mailto:bracamontedar@gmail.com">dbracamonte</a>{' '}
           <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by <a href="mailto:bracamontedar@gmail.com">dbracamonte</a>
+            ✞
+          </span>
         </span>
       </Details>
       <Links>

@@ -19,14 +19,15 @@ export const Intro = () => {
           <h1>
             <Trans>Hello</Trans>
           </h1>
-          <h1>{t('Hello')}</h1>
-          <h4>I’m Darwin and I’m a JAMStack engineer!</h4>
+          <h4>
+            <Trans>Greeting</Trans>
+          </h4>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            <Trans>Contact me</Trans>
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Darwin and I’m a JAMStack engineer!" />
+          <img src={dev} alt={t('Greeting')} />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

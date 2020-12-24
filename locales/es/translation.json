@@ -1,0 +1,22 @@
+{
+  "Hello": "¡Hola!",
+  "Greeting": "¡Me llamo Darwin y soy desarrollador front-end!",
+  "Contact": "Contacto",
+  "Contact me": "Contáctame",
+  "Projects": "Proyectos",
+  "About": "Sobre mí",
+  "More about me": "Más sobre mí",
+  "About me": "Amante de la tecnología, de JavaScript, los deportes, mi familia y Dios. Responsable, creativo, comunicativo y con capacidad de trabajar en equipo. Con el propósito constante de crecer día a día tanto profesional como personalmente.",
+  "Full name": "Nombre",
+  "Email": "Correo electrónico",
+  "Message": "Mensaje",
+  "Submit": "Enviar",
+  "Message has been successfully sent": "Su mensaje ha sido enviado con éxito, me pondré en contacto con usted lo antes posible.",
+  "Full name field is required": "El campo Nombre es requerido",
+  "Invalid email": "Correo electrónico inválida",
+  "Email field is required": "El campo Correo electrónico es requerido",
+  "Message field is required": "El campo Mensaje es requerido",
+  "Robots are not welcome yet!": "¡Los robots todavía no son bienvenidos!",
+  "Something went wrong, please try again!": "¡Algo salió mal. Por favor, vuelva a intentarlo!",
+  "All rights are reserved": "Derechos reservados"
+}

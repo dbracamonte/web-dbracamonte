@@ -7,7 +7,7 @@ const ToggleLang = () => {
   return (
     <>
       {languages
-        // .filter(lng => lng !== language)
+        .filter(lng => lng !== language)
         .map(lng => (
           <Link key={lng} to={originalPath} language={lng}>
             {lng.toUpperCase()}

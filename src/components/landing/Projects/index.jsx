@@ -4,6 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
+import { Trans } from 'gatsby-plugin-react-i18next';
 import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
 export const Projects = () => {
@@ -32,7 +33,7 @@ export const Projects = () => {
                   forkCount
                   languages(first: 3) {
                     nodes {
-                      id,
+                      id
                       name
                     }
                   }
@@ -44,9 +45,12 @@ export const Projects = () => {
       }
     `
   );
+
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Projects</h2>
+      <h2>
+        <Trans>Projects</Trans>
+      </h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
@@ -58,23 +62,19 @@ export const Projects = () => {
               <TitleWrap>
                 <Stats theme={theme}>
                   <div>
-                    <Star color={theme === "light" ? "#000" : "#fff"} />
+                    <Star color={theme === 'light' ? '#000' : '#fff'} />
                     <span>{node.stargazers.totalCount}</span>
                   </div>
                   <div>
-                    <Fork color={theme === "light" ? "#000" : "#fff"} />
+                    <Fork color={theme === 'light' ? '#000' : '#fff'} />
                     <span>{node.forkCount}</span>
                   </div>
                 </Stats>
                 <Stats theme={theme}>
                   <Languages>
-                    {
-                      node.languages.nodes.map(({ id, name }) => (
-                        <span key={id}>
-                          {name}
-                        </span>
-                      ))
-                    }
+                    {node.languages.nodes.map(({ id, name }) => (
+                      <span key={id}>{name}</span>
+                    ))}
                   </Languages>
                 </Stats>
               </TitleWrap>
